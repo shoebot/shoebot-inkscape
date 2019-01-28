@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Render Shoebot Script</_name>
+  <id>org.inkscape.render.shoebot</id>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <dependency type="executable" location="extensions">render_shoebot_script.py</dependency>
+  <param name="path" type="string" _gui-text="Botscript path:"></param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu _name="Render"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">render_shoebot_script.py</command>
+  </script>
+</inkscape-extension>
+
