@@ -4,28 +4,25 @@ Shoebot Inkscape plugin
 The Shoebot Inkscape plugin renders the output of a Shoebot script 
 directly into an Inkscape document.
 
+This script is from 2008 and was written for Inkscape 0.46 and up.
+We're not sure if or how it works -- just found it in an old HD and
+put it up here. Let us know if you need help or have tried it.
+
 Installing
 ----------
 
-First, check your version of Inkscape. For 0.45, use the files in the 0.45/
-directory. For 0.46 and up, including development versions, use the files
-in the 0.46+ dir.
-
 In case you don't have a local plugins directory, make it:
 
-  mkdir ~/.inkscape/extensions
+    mkdir ~/.inkscape/extensions
 
-Then put the contents of the relevant dir inside:
+Then put the plugin files inside:
 
-(for Inkscape 0.45)
-  cp ./0.45/* ~/.inkscape/extensions
-
-(for 0.46+ and up)
-  cp ./0.46+/* ~/.inkscape/extensions
+    cp render_shoebot_script.inx render_shoebot_script.py ~/.inkscape/extensions
 
 Running
 -------
 
-Now look for the 'Render Shoebot Script' effect inside 'Effects->Render' menu.
-Just provide the path of the script you want to render, and fire it up.
+Now look for the _Render Shoebot Script_ effect inside the `Effects -> Render` menu.
+
+Provide the path of the script you want to render, run it and the result will be placed in your document.
 
